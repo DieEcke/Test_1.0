@@ -12,15 +12,4 @@ function addNote() {
            noteInput.value = '';
      }
 }
-function saveNotes() {
-     const notesContainer = document.getElementById('notesContainer');
-    const notes = Array.from(notesContainer.children);
-     const notesText = notes.map(note => note.textContent).join('\n');
-     
-     // Simulierte Speicherung in einer Textdatei (für Browser)
-     const blob = new Blob([notesText], { type: 'text/plain' });
-   const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-     link.download = 'notes.txt';
-     link.click();
-    }
+
