@@ -13,6 +13,19 @@ function addNote() {
      }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Funktion zum Sortieren der Notizen nach dem ersten Buchstaben
   function sortNotes() {
     const notesContainer = document.getElementById('notesContainer');
@@ -21,3 +34,4 @@ function addNote() {
     notesContainer.innerHTML = '';
     notes.forEach(note => notesContainer.appendChild(note));
    }
+   
